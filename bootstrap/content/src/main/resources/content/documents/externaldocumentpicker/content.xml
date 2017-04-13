@@ -146,6 +146,10 @@
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
         <sv:value>001</sv:value>
+        <sv:value>002</sv:value>
+        <sv:value>003</sv:value>
+        <sv:value>004</sv:value>
+        <sv:value>006</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Another Lorem</sv:value>
@@ -172,13 +176,13 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2017-04-13T15:48:32.567+02:00</sv:value>
+        <sv:value>2017-04-13T16:53:36.413+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
-        <sv:value>2017-04-13T15:48:35.219+02:00</sv:value>
+        <sv:value>2017-04-13T16:53:39.958+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippotranslation:id" sv:type="String">
         <sv:value>a85ac07d-a885-432b-99b2-f567aaf126b8</sv:value>
@@ -228,6 +232,10 @@
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
         <sv:value>001</sv:value>
+        <sv:value>002</sv:value>
+        <sv:value>003</sv:value>
+        <sv:value>004</sv:value>
+        <sv:value>006</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Another Lorem</sv:value>
@@ -251,7 +259,7 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2017-04-13T15:48:32.567+02:00</sv:value>
+        <sv:value>2017-04-13T16:53:36.413+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -304,6 +312,10 @@
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
         <sv:value>001</sv:value>
+        <sv:value>002</sv:value>
+        <sv:value>003</sv:value>
+        <sv:value>004</sv:value>
+        <sv:value>006</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Another Lorem</sv:value>
@@ -312,9 +324,6 @@
       <sv:property sv:name="hippo:related___pathreference" sv:type="String">
         <sv:value>content/another-sample-document/another-sample-document</sv:value>
         <sv:value>content/another-sample-document/another-sample-document[2]</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippostd:holder" sv:type="String">
-        <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="hippostd:state" sv:type="String">
         <sv:value>draft</sv:value>
