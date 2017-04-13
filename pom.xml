@@ -70,8 +70,10 @@
     <xalan.version>2.7.1</xalan.version>
     <junit.version>4.10</junit.version>
     <easymock.version>3.1</easymock.version>
+    <json-lib.version>2.4</json-lib.version>
 
     <forge.exdocpickerbase.version>3.1.1</forge.exdocpickerbase.version>
+
 
     <repo.bootstrap>true</repo.bootstrap>
     <content-module-deploy-dir>shared/lib</content-module-deploy-dir>
@@ -100,7 +102,6 @@
         <artifactId>hippo-essentials-plugin-sdk-api</artifactId>
         <version>${essentials.version}</version>
       </dependency>
-
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>jsp-api</artifactId>
@@ -113,6 +114,13 @@
         <groupId>org.onehippo.forge.exdocpickerbase</groupId>
         <artifactId>exdocpickerbase-field</artifactId>
         <version>${forge.exdocpickerbase.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>net.sf.json-lib</groupId>
+        <artifactId>json-lib</artifactId>
+        <version>${json-lib.version}</version>
+        <classifier>jdk15</classifier>
       </dependency>
 
       <!-- other predefined runtime scope versioned dependencies -->
