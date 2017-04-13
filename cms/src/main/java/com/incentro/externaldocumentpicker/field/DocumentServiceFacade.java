@@ -1,12 +1,12 @@
 /**
  * Copyright 2014 Hippo B.V. (http://www.onehippo.com)
- *
+ * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
- *         http://www.apache.org/licenses/LICENSE-2.0
- *
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,7 +15,6 @@
  */
 package com.incentro.externaldocumentpicker.field;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -25,7 +24,6 @@ import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 import javax.jcr.Value;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.onehippo.forge.exdocpicker.api.ExternalDocumentCollection;
 import org.onehippo.forge.exdocpicker.api.ExternalDocumentServiceContext;
@@ -33,6 +31,10 @@ import org.onehippo.forge.exdocpicker.api.ExternalDocumentServiceFacade;
 import org.onehippo.forge.exdocpicker.impl.SimpleExternalDocumentCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.web.client.RestTemplate;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -60,6 +62,7 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
      * Plugin parameter name for physical document field name (JCR property name).
      */
     public static final String PARAM_EXTERNAL_DOCS_FIELD_NAME = "example.external.docs.field.name";
+    public static final String JSON_REST_URL = "http://localhost:8080/site/binaries/content/assets/examples/exdocs.json";
 
     private static final long serialVersionUID = 1L;
 
@@ -68,37 +71,38 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
     private JSONArray docArray;
 
     public DocumentServiceFacade() {
-        InputStream input = null;
+        getDocumentsFromExternalSource();
+    }
 
+    /**
+     * Make a simple request to your rest webservice
+     *
+     * @param queryString
+     */
+    private void getDocumentsFromExternalSource(String queryString) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        RestTemplate restTemplate = new RestTemplate();
         try {
-            input = getClass().getResourceAsStream(DocumentServiceFacade.class.getSimpleName() + ".json");
-            docArray = (JSONArray) JSONSerializer.toJSON(IOUtils.toString(input));
+            String result = restTemplate.getForObject(JSON_REST_URL + "?q=" + queryString, String.class);
+            docArray = (JSONArray) JSONSerializer.toJSON(result);
+            log.info("Retrieved {} documents from {}", docArray.size(), JSON_REST_URL + "?q=" + queryString);
         } catch (Exception e) {
-            log.error("Failed to load JSON data.", e);
-        } finally {
-            IOUtils.closeQuietly(input);
+            log.warn("Couldnt get from endpoint: {}", e.getMessage());
         }
+    }
+
+    private void getDocumentsFromExternalSource() {
+        getDocumentsFromExternalSource("");
     }
 
     @Override
     public ExternalDocumentCollection<JSONObject> searchExternalDocuments(ExternalDocumentServiceContext context, String queryString) {
         ExternalDocumentCollection<JSONObject> docCollection = new SimpleExternalDocumentCollection<JSONObject>();
-        int size = docArray.size();
-
-        if (StringUtils.isBlank(queryString)) {
-            for (int i = 0; i < size; i++) {
-                docCollection.add(docArray.getJSONObject(i));
-            }
-        } else {
-            for (int i = 0; i < size; i++) {
-                JSONObject doc = docArray.getJSONObject(i);
-
-                if (StringUtils.contains(doc.toString(), queryString)) {
-                    docCollection.add(doc);
-                }
-            }
+        getDocumentsFromExternalSource(queryString);
+        for (int i = 0; i < docArray.size(); i++) {
+            docCollection.add(docArray.getJSONObject(i));
         }
-
         return docCollection;
     }
 
@@ -116,7 +120,7 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
             final Node contextNode = context.getContextModel().getNode();
 
             if (contextNode.hasProperty(fieldName)) {
-                Value [] values = contextNode.getProperty(fieldName).getValues();
+                Value[] values = contextNode.getProperty(fieldName).getValues();
 
                 for (Value value : values) {
                     String id = value.getString();

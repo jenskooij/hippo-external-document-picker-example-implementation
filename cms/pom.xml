@@ -72,6 +72,10 @@
             <artifactId>json-lib</artifactId>
             <classifier>jdk15</classifier>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <finalName>cms</finalName>

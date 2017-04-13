@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="examples">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>hippogallery:stdAssetGallery</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+    <sv:value>mix:versionable</sv:value>
+    <sv:value>hippo:named</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>424413af-3050-407d-9742-9f4f7c0f7a29</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippo:name" sv:type="String">
+    <sv:value>examples</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippostd:foldertype" sv:type="String" sv:multiple="true">
+    <sv:value>new-file-folder</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippostd:gallerytype" sv:type="String" sv:multiple="true">
+    <sv:value>hippogallery:exampleAssetSet</sv:value>
+  </sv:property>
+</sv:node>
