@@ -1,0 +1,31 @@
+# IntelliJ
+.idea
+**.iml
+**.ipr
+**.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Eclipse
+.project
+.settings
+.classpath
+
+# Maven
+target
+overlays
+
+
+**rebel.xml
+local_repo/
+bootstrap/.rebel.xml.bak
+bootstrap/configuration/.rebel.xml.bak
+bootstrap/content/.rebel.xml.bak
+bootstrap/webfiles/.rebel.xml.bak
+bootstrap/.rebel-remote.xml.bak
+bootstrap/configuration/.rebel-remote.xml.bak
+bootstrap/content/.rebel-remote.xml.bak
+bootstrap/webfiles/.rebel-remote.xml.bak
+cms/.rebel-remote.xml.bak
+site/.rebel-remote.xml.bak
