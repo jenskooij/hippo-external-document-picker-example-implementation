@@ -9,6 +9,7 @@
         <@hst.cmseditlink hippobean=item/>
         <@hst.link var="link" hippobean=item/>
         <h3><a href="${link}">${item.title?html}</a></h3>
+        <h4>Contains ${item.externalDocument?size} kittens.</h4>
         <#if item.publicationDate??>
           <p>
             <@fmt.formatDate value=item.publicationDate.time type="both" dateStyle="medium" timeStyle="short"/>

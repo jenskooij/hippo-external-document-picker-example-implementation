@@ -49,6 +49,10 @@
       <sv:property sv:name="externaldocumentpicker:publicationdate" sv:type="Date">
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
+      <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
+        <sv:value>{"id":"003","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 3","description":"This is the third kitten I've found"}</sv:value>
+        <sv:value>{"id":"005","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 5","description":"This is the fifth kitten I've found"}</sv:value>
+      </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Lorem</sv:value>
       </sv:property>
@@ -74,13 +78,13 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
+        <sv:value>2017-04-14T12:56:23.411+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
-        <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
+        <sv:value>2017-04-14T12:56:29.228+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippotranslation:id" sv:type="String">
         <sv:value>39979f44-7550-4e28-a019-7c1a627904a9</sv:value>
@@ -128,6 +132,10 @@
       <sv:property sv:name="externaldocumentpicker:publicationdate" sv:type="Date">
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
+      <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
+        <sv:value>{"id":"003","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 3","description":"This is the third kitten I've found"}</sv:value>
+        <sv:value>{"id":"005","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 5","description":"This is the fifth kitten I've found"}</sv:value>
+      </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Lorem</sv:value>
       </sv:property>
@@ -150,7 +158,7 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
+        <sv:value>2017-04-14T12:56:23.411+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -201,6 +209,10 @@
       <sv:property sv:name="externaldocumentpicker:publicationdate" sv:type="Date">
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
+      <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
+        <sv:value>{"id":"003","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 3","description":"This is the third kitten I've found"}</sv:value>
+        <sv:value>{"id":"005","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 5","description":"This is the fifth kitten I've found"}</sv:value>
+      </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Lorem</sv:value>
       </sv:property>
@@ -208,9 +220,6 @@
       <sv:property sv:name="hippo:related___pathreference" sv:type="String">
         <sv:value>content/sample-document/sample-document</sv:value>
         <sv:value>content/sample-document/sample-document[2]</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippostd:holder" sv:type="String">
-        <sv:value>editor</sv:value>
       </sv:property>
       <sv:property sv:name="hippostd:state" sv:type="String">
         <sv:value>draft</sv:value>
@@ -469,6 +478,9 @@
         <sv:value>content/another-sample-document/another-sample-document</sv:value>
         <sv:value>content/another-sample-document/another-sample-document[2]</sv:value>
       </sv:property>
+      <sv:property sv:name="hippostd:holder" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
       <sv:property sv:name="hippostd:state" sv:type="String">
         <sv:value>draft</sv:value>
       </sv:property>
@@ -482,7 +494,7 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2017-04-14T12:43:52.549+02:00</sv:value>
+        <sv:value>2017-04-14T12:48:23.893+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -498,22 +510,7 @@
           <sv:value>hippostd:html</sv:value>
         </sv:property>
         <sv:property sv:name="hippostd:content" sv:type="String">
-          <sv:value>&lt;html&gt;
-            &lt;body&gt;
-
-            &lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-            roots in a piece of classical Latin literature from 45 BC, making it over 2000
-            years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-            Virginia, looked up one of the more obscure Latin words, consectetur, from a
-            Lorem Ipsum passage, and going through the cites of the word in classical
-            literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-            Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
-            ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-            "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.&lt;/p&gt;
-
-            &lt;/body&gt;
-            &lt;/html&gt;</sv:value>
+          <sv:value>&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.&lt;/p&gt;</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>

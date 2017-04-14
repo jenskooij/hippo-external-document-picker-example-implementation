@@ -195,7 +195,7 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
 
         return "";
     }
-    
+
     private JSONObject findDocumentById(final String id) {
         for (int i = 0; i < docArray.size(); i++) {
             JSONObject doc = docArray.getJSONObject(i);
