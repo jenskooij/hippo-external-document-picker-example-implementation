@@ -42,4 +42,8 @@ public class ContentDocument extends BaseDocument {
     public Calendar getPublicationDate() {
         return getProperty("externaldocumentpicker:publicationdate");
     }
+
+    public String[] getExternalDocument() {
+        return getProperty("externaldocumentpicker:relatedexdocids");
+    }
 }

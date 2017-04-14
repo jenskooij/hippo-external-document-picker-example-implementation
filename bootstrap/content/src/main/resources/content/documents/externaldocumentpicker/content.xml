@@ -118,7 +118,6 @@
       </sv:property>
       <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
         <sv:value>mix:versionable</sv:value>
-        <sv:value>mix:referenceable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>f96efd9f-c960-4dd2-81af-53d4196cc549</sv:value>
@@ -293,11 +292,10 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
-        <sv:value>001</sv:value>
-        <sv:value>002</sv:value>
-        <sv:value>003</sv:value>
-        <sv:value>004</sv:value>
-        <sv:value>006</sv:value>
+        <sv:value>{"id":"001","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 1","description":"This is the first kitten I've found"}</sv:value>
+        <sv:value>{"id":"004","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 4","description":"This is the fourth kitten I've found"}</sv:value>
+        <sv:value>{"id":"003","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 3","description":"This is the third kitten I've found"}</sv:value>
+        <sv:value>{"id":"002","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 2","description":"This is the second kitten I've found"}</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Another Lorem</sv:value>
@@ -324,13 +322,13 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2017-04-13T16:53:36.413+02:00</sv:value>
+        <sv:value>2017-04-14T12:42:42.504+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
-        <sv:value>2017-04-13T16:53:39.958+02:00</sv:value>
+        <sv:value>2017-04-14T12:42:45.268+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippotranslation:id" sv:type="String">
         <sv:value>a85ac07d-a885-432b-99b2-f567aaf126b8</sv:value>
@@ -379,11 +377,10 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
-        <sv:value>001</sv:value>
-        <sv:value>002</sv:value>
-        <sv:value>003</sv:value>
-        <sv:value>004</sv:value>
-        <sv:value>006</sv:value>
+        <sv:value>{"id":"001","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 1","description":"This is the first kitten I've found"}</sv:value>
+        <sv:value>{"id":"004","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 4","description":"This is the fourth kitten I've found"}</sv:value>
+        <sv:value>{"id":"003","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 3","description":"This is the third kitten I've found"}</sv:value>
+        <sv:value>{"id":"002","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 2","description":"This is the second kitten I've found"}</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Another Lorem</sv:value>
@@ -407,7 +404,7 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2017-04-13T16:53:36.413+02:00</sv:value>
+        <sv:value>2017-04-14T12:42:42.504+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -459,11 +456,10 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:relatedexdocids" sv:type="String" sv:multiple="true">
-        <sv:value>001</sv:value>
-        <sv:value>002</sv:value>
-        <sv:value>003</sv:value>
-        <sv:value>004</sv:value>
-        <sv:value>006</sv:value>
+        <sv:value>{"id":"001","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 1","description":"This is the first kitten I've found"}</sv:value>
+        <sv:value>{"id":"004","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 4","description":"This is the fourth kitten I've found"}</sv:value>
+        <sv:value>{"id":"003","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 3","description":"This is the third kitten I've found"}</sv:value>
+        <sv:value>{"id":"002","icon":"http://localhost:8080/site/binaries/content/assets/examples/kitten.png","title":"Example kitten 2","description":"This is the second kitten I've found"}</sv:value>
       </sv:property>
       <sv:property sv:name="externaldocumentpicker:title" sv:type="String">
         <sv:value>Another Lorem</sv:value>
@@ -486,7 +482,7 @@
         <sv:value>2014-03-25T16:52:00.000+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
-        <sv:value>2017-04-14T09:26:47.842+02:00</sv:value>
+        <sv:value>2017-04-14T12:43:52.549+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
         <sv:value>admin</sv:value>

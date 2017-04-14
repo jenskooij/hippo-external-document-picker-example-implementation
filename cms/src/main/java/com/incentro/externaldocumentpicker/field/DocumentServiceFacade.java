@@ -122,6 +122,7 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
             if (contextNode.hasProperty(fieldName)) {
                 Value[] values = contextNode.getProperty(fieldName).getValues();
 
+                // This is where it checks which values are selected.
                 for (Value value : values) {
                     String id = value.getString();
                     JSONObject doc = findDocumentById(id);
@@ -138,6 +139,13 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
         return docCollection;
     }
 
+    /**
+     * This method sets what data form the external source should be stored on the document.
+     * In this case it stores the entire json object as string
+     *
+     * @param context
+     * @param exdocs
+     */
     @Override
     public void setFieldExternalDocuments(ExternalDocumentServiceContext context, ExternalDocumentCollection<JSONObject> exdocs) {
         final String fieldName = context.getPluginConfig().getString(PARAM_EXTERNAL_DOCS_FIELD_NAME);
@@ -152,7 +160,7 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
 
             for (Iterator<? extends JSONObject> it = exdocs.iterator(); it.hasNext(); ) {
                 JSONObject doc = it.next();
-                docIds.add(doc.getString("id"));
+                docIds.add(doc.toString());
             }
 
             contextNode.setProperty(fieldName, docIds.toArray(new String[docIds.size()]));
@@ -187,12 +195,12 @@ public class DocumentServiceFacade implements ExternalDocumentServiceFacade<JSON
 
         return "";
     }
-
+    
     private JSONObject findDocumentById(final String id) {
         for (int i = 0; i < docArray.size(); i++) {
             JSONObject doc = docArray.getJSONObject(i);
 
-            if (StringUtils.equals(id, doc.getString("id"))) {
+            if (StringUtils.equals(id, doc.toString())) {
                 return doc;
             }
         }
