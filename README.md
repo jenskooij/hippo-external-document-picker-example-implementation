@@ -1,11 +1,12 @@
 # Hippo External Document Picker Example Implementation
 Example implementation, using the Hippo Forge plugin "External Document Picker" to retrieve external documents from a JSON REST endpoint
 
-## How it was created
+## How to implement
 1. Add the neccesary dependencies to pom [[1]](#1)
 2. Implement your DocumentServiceFacede from which the picker will recieve it's documents [[2]](cms/src/main/java/com/incentro/externaldocumentpicker/field/DocumentServiceFacade.java)
 3. Point it to your JSON endpoint by editing the public static final String constant JSON_REST_URL
 4. Add the field to your document type [[3]](#3)
+5. Rebuild and restart
 
 ## Find additional documentation for the plugin itself here:
 The official documentation of the Hippo Forge plugin.
